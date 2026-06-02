@@ -1,9 +1,0 @@
-#include <iostream>
-
-int main() {
-    int x;
-    std::cout<<"Enter your age ";
-    std::cin>>x; //Used std::cin to get user input
-    std::cout<<"Your age is, "<<x;
-    return 0;
-}
