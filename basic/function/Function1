@@ -1,0 +1,11 @@
+#include <iostream>
+
+void age(){
+    int x;
+    std::cout<<"Enter your age ";
+    std::cin>>x;
+    std::cout<<"Age is "<<x;}
+int main(){
+    age();
+    return 0;
+}
