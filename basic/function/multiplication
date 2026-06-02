@@ -1,0 +1,9 @@
+#include<iostream>
+int multiply(int a,int b){
+    return a*b;
+}
+int main(){
+    int result=multiply(6,3);
+    std::cout<<"6*3="<<result;
+    return 0;
+}
