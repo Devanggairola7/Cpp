@@ -1,0 +1,10 @@
+#include<iostream>
+
+int main(){
+    int x =8;
+    std::cout<<x<<'\n'; // the backslash is used 
+    std::cout<<"new line"<<std::endl;
+    std::cout<<"new line 2"<<'/n'; 
+    /*Using a forward slash (e.g. '/n') or including other characters inside the single quotes (e.g. ' \n' or '.\n') will result in unexpected behavior. For example, std::cout << '/n'; will often print as 12142, which probably isn’t what you were expecting.*/
+    return 0;
+}
