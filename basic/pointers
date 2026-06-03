@@ -1,0 +1,10 @@
+#include<iostream>
+
+int main(){ 
+    int var=90;
+    int* ptr=&var;// to get address of the variable var 
+    std::cout<<ptr<<std::endl;
+    *ptr = 10;// to write to data change of the variable using pointer
+    std::cout<<var;   
+    return 0;
+}
