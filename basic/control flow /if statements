@@ -1,0 +1,12 @@
+#include<iostream>
+
+int main(){
+    int age=89;
+    if(age>=18){
+        std::cout<<"age valid for vote";
+    }
+    else{
+        std::cout<<"age is invalid for vote";
+    }
+    return 0;
+}
