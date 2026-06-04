@@ -1,0 +1,15 @@
+// to convert decimal to binary 
+#include<iostream>
+void bindec(int n) {
+    if (n == 0) {
+        return;
+    }
+    bindec(n / 2);
+    std::cout << (n % 2);
+}
+int main(){
+    int c;
+    std::cout<<"Enter a number to be converted to binary";
+    std::cin>>c;
+    bindec(c);
+}
