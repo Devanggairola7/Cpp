@@ -1,0 +1,8 @@
+#include<iostream>
+int main(){
+    int example[10];// initializing of an array
+    example[0]=2;
+    std::cout<<example<<'\n';// to get address of an array
+    std::cout<<example[0];
+    return 0;
+}
