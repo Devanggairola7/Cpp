@@ -1,0 +1,18 @@
+#include<iostream>
+#include<vector>
+int main(){
+    int temp=0;
+    std::vector<int> arr={70,8,5,1,0,5,2,0,5,1,0,1,0};//test case
+    for(int i=0;i<arr.size()-1;i++){
+        for(int j=i+1;j<arr.size();j++){
+            if(arr[i]>arr[j]){
+                temp=arr[j];
+                arr[j]=arr[i];
+                arr[i]=temp;
+            }
+        }
+    }
+    for(int i=0;i<arr.size();i++){
+        std::cout<<arr[i];
+    }
+}
