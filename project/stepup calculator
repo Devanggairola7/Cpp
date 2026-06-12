@@ -1,0 +1,43 @@
+#include <fstream>
+#include<ctime>
+#include<iostream>
+int main(){
+    int money=0;
+    int stepup=0;
+    int Time=0;
+    int moneysum=0;
+    std::time_t timestamp;
+    std::time(&timestamp);
+    std::cout<<ctime(&timestamp);
+    std::cout<<"Enter the amount you want to iniate with ";
+    std::cin>>money;
+    std::cout<<"Enter the step up by ";
+    std::cin>>stepup;
+    std::cout<<"You want to step up till  how many months consider from initial time ";
+    std::cin>>Time;
+    std::cout<<"Your final amount to be paid by you will be "<<money+(Time-1)*stepup<<std::endl;
+    moneysum=Time*(2*money+(Time-1)*stepup)/2;
+    std::cout<<"the sum total will be "<<moneysum;
+    // File handling to record data
+    std::ofstream data("data.txt",std::ios::app);
+    std::ifstream cdata("data.txt");
+    std::string key;
+    int Counter=0000;
+    while(cdata>>key){
+        if(key=="Counter"){
+            char equalsSign;
+            cdata >> equalsSign; // Crucial as then counter will not fetch the correct data 
+            cdata >> Counter;
+            }
+        }
+    cdata.close();
+    Counter++;
+    data<<"----------------------------------------------------------------------------------------------------------------------------------";
+    data<<std::endl<<"Money = "<<money<<std::endl<<"Stepup by ="<<stepup<<std::endl<<"Time in month is="<<Time<<std::endl<<"Total amount calculated at end is"<<moneysum<<std::endl;
+    data<<"Counter ="<<Counter;
+    data.close();
+    std::cout<<std::endl<<"Use count "<<Counter;
+    std::cout << "\nPress Enter to exit...";
+    std::cin.ignore();
+    std::cin.get(); 
+}
