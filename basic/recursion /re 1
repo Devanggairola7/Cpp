@@ -1,0 +1,11 @@
+#include<iostream>
+int count=0;
+void re(){
+    if(count==3){return ;}// base condition
+      count++;
+    std::cout<<"1";
+    re();
+}
+int main(){
+    re();// calling the function
+}
