@@ -1,0 +1,12 @@
+#include<iostream>
+#include<string.h>
+bool pallindrome(std::string &s,int i,int n){
+    if(i>=n/2){
+        return true ;}
+    if(s[i]!=s[n-1-i]){return false;}
+    return pallindrome(s,i+1,n);
+}
+int main(){
+    std::string s="abcdef";
+    std::cout<<pallindrome(s,0,7);
+}
