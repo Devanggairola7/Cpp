@@ -1,0 +1,16 @@
+// factorial
+#include<iostream>
+using namespace std;
+int main(){
+    int fact=1,num;
+    cout<<"enter a number ";
+    cin>>num;
+    if(num==0){
+        fact=1;
+    }
+    for(int i=1;i<=num;i++){
+        fact=fact*i;
+    }
+    cout<<fact;
+    return 0;
+}
